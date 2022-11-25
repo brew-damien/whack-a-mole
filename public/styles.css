@@ -1,0 +1,184 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    overscroll-behavior: none;
+    cursor: none;
+}
+
+header {
+    background-color: #24f9e7;
+    font-size: 70px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5vh;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    justify-content: space-between;
+    background-image: url('https://gallery.yopriceville.com/var/resizes/Backgrounds/Green_Grass_Background.jpg?m=1431995372');
+    background-size: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.mole {
+    background-image: url('images/hole.png');
+    background-size: 20vw;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    width: 20vw;
+    height: 11.5vw;
+    margin: 15px;
+    background-color: none;
+}
+
+.mole-image{
+    margin-top: 200px;
+    background-image: url("images/mole.png");
+    width: 200px;
+    height: 200px;
+    transition: All 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    transform: translateX(-40%)
+}
+
+.move{
+    transform: translateY(-100%);
+}
+
+.game-grid {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+aside {
+    background-color: rgb(104, 82, 62);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    padding: 0 10px 0 10px;
+    height: 100vh;
+}
+
+section {
+    align-self: center;
+}
+
+.app {
+    display: flex;
+    width: 22vw;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
+    
+.start-button {
+    padding: 24px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #804d29;
+    border: 1px solid #634027;
+}
+
+.hidden {
+    display: none;
+}
+
+#userName {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#userName{
+    display: flex;
+    align-content: center;
+    height: 80%;
+}
+
+#user{
+    height: 30px;
+    align-items: flex-end !important;
+}
+
+#user-input{
+    width:70%;
+    border-radius: 50px;
+    border-style: none;
+    background-color:#b4b4bcaf;
+    height: 30px;
+    font-size: 15px;
+    align-self: flex-end !important;
+    border-top-right-radius: 0px !important;
+    -webkit-border-right-left-radius: 0px !important;
+    -moz-border-radius-topright: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+    -moz-border-radius-bottomright: 0px !important;
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    align-self: center;
+}
+
+.chatButton{
+    background-color: #2294fbaf;
+    height: 30px !important;
+    width: 30px !important;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    padding: 0px;
+    border-style: none;
+    align-self: flex-end;
+    text-align:center;
+    padding-left: 4px !important;
+    border-top-left-radius: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    -moz-border-radius-topleft: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    -webkit-border-bottom-left-radius: 0px !important;
+    -moz-border-radius-bottomleft: 0px !important;
+}
+
+#my-cursor {
+    transform: scaleX(-1);
+    display: flex;
+    background-size: cover;
+    position: absolute;
+    background-image: url("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7767584/wooden-hammer-3d-clipart-md.png") !important;
+    width: 300px;
+    height: 232px;
+    z-index: 4;
+}
+
+.animation {
+    animation: mymove 0.5s;
+}
+
+@keyframes mymove {
+    0%   {transform: rotate(0deg) scaleX(-1) }
+    25%  {transform: rotate(45deg) scaleX(-1)}
+    50%  {transform: rotate(-45deg) scaleX(-1)}
+    100% {transform: rotate(0deg) scaleX(-1)}
+}
