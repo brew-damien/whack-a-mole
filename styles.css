@@ -40,7 +40,7 @@ main {
 }
 
 .mole {
-    background-image: url('images/hole.png');
+    background-image: url('hole.png');
     background-size: 20vw;
     background-repeat: no-repeat;
     background-position:bottom;
@@ -52,7 +52,7 @@ main {
 
 .mole-image{
     margin-top: 200px;
-    background-image: url("images/mole.png");
+    background-image: url("mole.png");
     width: 200px;
     height: 200px;
     transition: All 0.5s;
